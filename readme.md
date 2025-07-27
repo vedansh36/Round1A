@@ -51,3 +51,14 @@ Round1A/
 ├── Dockerfile                # Docker configuration file
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project documentation (this file)
+
+```
+## Installation
+```plaintext
+docker build --platform linux/amd64 -t pdf-outline-extractor:latest .
+
+docker run --rm `
+  -v ${PWD}/input:/app/input `
+  -v ${PWD}/output:/app/output `
+  --network none `
+  pdf-outline-extractor:latest
