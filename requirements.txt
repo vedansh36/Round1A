@@ -1,0 +1,5 @@
+PyMuPDF==1.23.19
+pypdf==4.1.0
+refinedoc==1.0.0
+
+
